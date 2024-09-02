@@ -32,7 +32,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="João Pedro Hubner Ghilardi">
+    <meta name="keywords" content="engenharia, construção, obras públicas">
+    <meta name="description"
+        content="A F&F Engenharia é uma empresa que atua no setor público, que cumpre com seus compromissos, buscando
+                    sua excelência desde 2008.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -168,13 +174,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="centro">
             <div class="form-ctt">
                 <h1 class="introducao">CONTATO</h1>
-                <p>Aqui encontra-se o setor de suporte. Caso você quiser fazer comentários, dúvidas, sugestões ou caso precisar de informações basta preencher o formulário abaixo! O mais rápido possível nossa equipe entrará em contato com você. Aguardamos seu contato!  </p>
+                <p>Aqui encontra-se o setor de suporte. Caso você quiser fazer comentários, dúvidas, sugestões ou caso precisar de informações basta preencher o formulário abaixo! O mais rápido possível nossa equipe entrará em contato com você. Aguardamos seu contato! </p>
                 <form action="processa_formulario.php" method="POST">
                     <label class="form-lb">Seu Nome:*<input class="area" name="nome" type="text" required></label>
                     <label class="form-lb">Seu email:*<input class="area" name="email" type="email" required></label>
                     <label class="form-lb">Assunto:*<input class="area" name="assunto" type="text" required></label>
                     <label class="form-lb">Mensagem:* <textarea class="area" name="mensagem" id="mensagem" required></textarea></label>
-                    <label><input  class="btn-enviar" type="submit"></label>
+                    <label><input class="btn-enviar" type="submit"></label>
                 </form>
             </div>
             <div class="outros-ctt">
