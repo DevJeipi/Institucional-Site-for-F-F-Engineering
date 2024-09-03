@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styleprograma.css" />
+    <title>Programa de Integridade | F&F Engenharia</title>
+  </head>
+  <body>
+    <main>
+      <header class="hlogo">
+        <img
+          src="./imagens/logotipo_f_e_f-removebg-preview.png"
+          alt="Logo F&F"
+        />
+      </header>
+
+      <section class="programa">
+        <h1 class="introducao">PROGRAMA DE INTEGRIDADE F&F ENGENHARIA</h1>
+        <p>
+          O Programa de Integridade da F&F Engenharia consiste em um conjunto de
+          mecanismos e procedimentos internos voltados à aplicação do código de
+          ética e conduta da empresa com o objetivo de fortalecer sua estrutura
+          institucional e sua interação com o mercado, assegurando o cumprimento
+          das normas legais nos âmbitos municipal, estadual e federal,
+          especialmente no que tange a processos de licitação e contratações com
+          a Administração Pública.
+        </p>
+      </section>
+      <section class="termo-empresarial">
+        <p>
+          A F&F Engenharia tem como objetivo construir uma relação de confinaça
+          com colaboradores, parceiros, clientes, entidades governamentais e a
+          comunidade, fundamentada em um compromisso corporativo sólido. Esse
+          compromisso é formalizado por meio do Código de Ética e Conduta, que é
+          desenvolvido e revisado conforme princípios que refletem a cultura de
+          <b>integridade, sustentabilidade, transparência e boas práticas.</b>
+        </p>
+        <ul class="lista-topc">
+          <li class="topico">
+            <h1>MISSÃO</h1>
+            <p>
+              executar obras para o setor público, contribuindo para o
+              desenvolvimento econômico e social regional.
+            </p>
+          </li>
+          <li class="topico">
+            <h1>VISÃO</h1>
+            <p>
+              ser uma empresa de referência no setor de obras públicas,
+              reconhecida pelo compromisso e solidez nas suas execuções e
+              entregas.
+            </p>
+          </li>
+          <li class="topico">
+            <h1>VALORES</h1>
+            <p>experiência, transparência e integridade.</p>
+            <ul>
+              <li class="subtopico">
+                <p>
+                  <b>Experiência:</b> expertise de mais de 20 anos de atuação no
+                  setor público através de profissionais treinados, respeitados
+                  e valorizados.
+                </p>
+              </li>
+              <li class="subtopico">
+                <p>
+                  <b>Transparência:</b> compromisso em manter informações claras
+                  sobre as atividades, realizações, políticas e desempenho da
+                  empresa, de maneira sistemática e acessível.
+                </p>
+              </li>
+              <li class="subtopico">
+                <p>
+                  <b>Integridade:</b> atuar de forma responsável, respeitando a
+                  legislação e mantendo conduta íntegra nas relações com
+                  clientes, fornecedores, Administração Pública, comunidades
+                  locais e sociedade em geral.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="datas">
+          <h1>DATA DA CRIAÇÃO DO PROGRAMA DE INTEGRIDADE</h1>
+          <span>Criação: junho, julho e agosto de 2024.</span>
+          <span>Implementações: agosto de 2024.</span>
+          <span>Treinamentos: julho e agosto de 2024.</span>
+        </div>
+        <div class="codigo">
+          <h1>CÓDIGO DE ÉTICA E CONDUTA</h1>
+          <p>
+            O Código de Ética e Conduta da F&F Engenharia consiste em um
+            conjunto de diretrizes que determina os valores e condutas da
+            empresa, estabelecendo padrões de comprometimento com o mercado,
+            fundamentados em princípios éticos, sociais e ambientais.
+          </p>
+          <a href="#"></a
+          ><!--colocar pdf aqui-->
+        </div>
+      </section>
+      <section class="canal-de-denuncia">
+        <div class="informacoes">
+          <p>
+            Caso tenha conhecimento de infração contra a lei ou as regras do
+            código de ética e conduta, especialmente em casos de fraudes,
+            desfalques, corrupção ou outras ações que possam caracterizar
+            delitos criminosos ou civis, ou dem um risco para a reputação da F&F
+            Engenharia, acesse o nosso canal de denúncias.
+          </p>
+          <span
+            >Toda a denúncia, questionamento ou comunicação será assegurado o
+            sigilo absoluto e o tratamento adequados de cada situação
+            comunicada.</span
+          >
+          <span class="telefone"
+            >Se preferir, entre em contato pelo nosso endereço telefônico:</span
+          >
+        </div>
+        <form action="denuncia.php" method="post">
+          <label for="nome">Nome(Opcional):</label>
+          <input class="form-input" type="text" id="nome" name="nome" />
+
+          <label for="email">E-mail(Opcional):</label>
+          <input class="form-input" type="email" id="email" name="email" />
+
+          <label for="motivo">Motivo:</label>
+          <select class="form-input" name="motivo" id="motivo" required>
+            <option value="escolher">--Escolha uma opção--</option>
+            <option value="Sugestão">Sugestão</option>
+            <option value="Crítica">Crítica</option>
+            <option value="Dúvida">Dúvida</option>
+            <option value="Denúncia">Denúncia</option>
+          </select>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            class="form-input"
+            name="mensagem"
+            id="mensagem"
+            required
+          ></textarea>
+
+          <input
+            class="form-input btn"
+            type="button"
+            value="Enviar"
+            class="btn-form"
+          />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
