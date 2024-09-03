@@ -29,7 +29,7 @@
                 <nav class="navbar menu-desktop">
                     <a class="navlink" href="https://www.fefengenharia.com.br/#servicos">Serviços</a></li>
                     <a class="navlink" href="https://www.fefengenharia.com.br/#quem-somos">Quem Somos</a></li>
-                    <a class="navlink" href="https://www.fefengenharia.com.br/compliance/compliance.php">Compliance</a></li>
+                    <a class="navlink" href="https://www.fefengenharia.com.br/compliance">Compliance</a></li>
                     <a class="navlink" href="https://www.fefengenharia.com.br/#contato">Contato</a></li>
                 </nav>
                 <div class="menu-mobile"></div>
@@ -60,7 +60,7 @@
             </div>
         </div>
     </section><!--Seção 2 Quem Somos-->
-    <section class="servicos" id="servicos"><!--Seção 3 Serviços-->
+    <section class="servicos"><!--Seção 3 Organograma-->
         <div class="centro">
             <h1 class="introducao">Nossa Estrutura Organizacional</h1>
             <div class="container-estrutura">
@@ -91,8 +91,8 @@
                 </div>
             </div>
         </div>
-    </section><!--Seção 3 Serviços-->
-    <section class="imagens-servico"><!--Seção 4 Imagens do Serviço-->
+    </section><!--Seção 3 Organograma-->
+    <section class="imagens-servico" id="servicos"><!--Seção 4 Imagens do Serviço-->
         <div class="centro">
             <div class="container-text">
                 <h1 class="minitext">NOSSOS</h1>
@@ -119,11 +119,12 @@
             <div class="form-ctt">
                 <h1 class="introducao">CONTATO</h1>
                 <p>Aqui encontra-se o setor de suporte. Caso você quiser fazer comentários, dúvidas, sugestões ou caso precisar de informações basta preencher o formulário abaixo! O mais rápido possível nossa equipe entrará em contato com você. Aguardamos seu contato! </p>
-                <form action="processa-formulario.php" method="POST">
+                <form action="https://formsubmit.co/joao.hubner07@gmail.com" method="POST">
                     <label class="form-lb">Seu Nome:*<input class="area" name="nome" type="text" required></label>
                     <label class="form-lb">Seu email:*<input class="area" name="email" type="email" required></label>
                     <label class="form-lb">Assunto:*<input class="area" name="assunto" type="text" required></label>
                     <label class="form-lb">Mensagem:* <textarea class="area" name="mensagem" id="mensagem" required></textarea></label>
+                    <input type="hidden" name="_next" value="https://fefengenharia.com.br/obrigado.html">
                     <label><input class="btn-enviar" type="submit"></label>
                 </form>
             </div>

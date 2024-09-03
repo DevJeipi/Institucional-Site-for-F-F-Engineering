@@ -6,7 +6,7 @@
     <meta name="author" content="João Pedro Hubner Ghilardi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagens/favicon.ico" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/stylecompliance.css">
 </head>
 <title>Canal de Denúncia | F&F Engenharia</title>
 
