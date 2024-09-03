@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </header><!--Header Fixa-->
     <section class="home"><!--Seção 1 Home-->
-        <img src="./imagens/foto9FeF.jpeg" alt="Foto De Obra Em Desenvolvimento">
+        <img src="./imagens/foto11FeF.jpeg" alt="Foto De Obra Em Desenvolvimento">
         <div class="centro">
             <div class="container-headline">
                 <h1>Qualidade diferenciada <br> com segurança e <br> responsabilidade.</h1>
@@ -93,27 +93,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="centro">
             <h1 class="introducao">Nossa Estrutura Organizacional</h1>
             <div class="container-estrutura">
-                <img src="./imagens/estrutural-FeF.png" alt="Estrutura Organizacional FeF Engenharia">
+                <img src="./imagens/novoorganogramaFeF.png" alt="Estrutura Organizacional FeF Engenharia">
             </div>
             <div class="container-institucional">
-                <div class="missao-visao">
-                    <h1 class="introducao">Nossa Missão</h1>
-                    <p class="descricao">Constuir e reformar empreendimentos de órgãos públicos, sempre buscando a
-                        excelência nos nossos serviços e garantindo a entrega dentro dos prazos estabelecidos.</p>
+                <div class="atividades">
+                    <h1 class="introducao">Descrição das atividades</h1>
                     <div class="block"></div>
-                    <h1 class="introducao">Nossa Visão</h1>
-                    <p class="descricao">Ser referência em obras públicas, sendo reconhecida pela qualidade do seus
-                        trabalho, mas também pleo compromisso de valorizar seus clientes e colaboradores.</p>
-                </div>
-                <div class="valores">
-                    <h1 class="introducao">Nossos Valores</h1>
-                    <ul class="descricao">
-                        <li>- Valorização das pessoas</li>
-                        <li>- Qualidade</li>
-                        <li>- Prazo de entrega das obras</li>
-                        <li>- Sustentabilidade</li>
-                        <li>- Atitude</li>
-                        <li>- Ética</li>
+                    <ul>
+                        <li class="descricao-atv">
+                            <h1>DIRETOR</h1>
+                            <p> dirige, planeja, organiza e controla as atividades de diversas áreas da empresa, direcionando políticas de gestão dos recursos financeiros, administrativos e técnicos. Responsável pela supervisão e aplicação das diretrizes convencionadas pelo Programa de Integridade F&F Engenharia e Construções (Compliance Officer).</p>
+                        </li>
+                        <li class="descricao-atv">
+                            <h1>GESTOR ADMINISTRATIVO</h1>
+                            <p> coordena as atividades diárias do departamento administrativo, garantindo o funcionamento adequado dos processos de gestão garantindo eficiência e alinhamento com os objetivos estratégicos da empresa. Desenvolve o processo de recrutamento, seleção e treinamento de pessoal. Desenvolve políticas de RH.</p>
+                        </li>
+                        <li class="descricao-atv">
+                            <h1>GESTOR TÉCNICO</h1>
+                            <p> desenvolve o planejamento estratégicos para a busca de aperfeiçoamento técnico operacional. Implementa sistemas de tecnologias que buscam a automação dos processos operacionais. Desenvolve projetos de engenharia, planeja e executa obras de engenharia.</p>
+                        </li>
+                        <li class="descricao-atv">
+                            <h1>GESTOR FINANCEIRO</h1>
+                            <p> coordena o controle de fluxo de caixa, orçamentos, contas a pagar e receber, coordena as atividades contábeis e fiscais, garantindo a conformidade com a legislação pertinente. Identifica as necessidades de compras juntamente com o Departamento Técnico, gerencia pesquisas de mercado para identificar fornecedores confiáveis, gerencia a formalização e registro de pedidos garantindo a rastreabilidade e controle</p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -141,35 +143,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </section><!--Seção 4 Imagens do Serviço-->
-    <section class="compliance" id="compliance"><!--Seção 5 Compliance-->
-        <img src="./imagens/time.webp" alt="Foto comum de um time">
-        <div class="centro">
-            <div class="fade-preto"></div>
-            <div class="container-programa">
-                <div class="codigo-etica">
-                    <h1 class="introducao">Programa de Integridade</h1>
-                    <hr>
-                    <p>O Código de Integridade e Ética da F&F Engenharia estabelece oficialmente nossos valores,
-                        princípios e normas de conduta que todos na empresa devem seguir. Ele visa garantir que as
-                        interações entre colaboradores e com o público sejam guiadas pelos mais elevados padrões éticos
-                        e morais, com ênfase no respeito, na justiça social e na sustentabilidade.</p>
-                    <a><button>Abrir Código</button></a>
-                </div>
-                <div class="area-de-denuncia">
-                    <h1 class="introducao">Canal de Denúncia</h1>
-                    <hr>
-                    <p> O Comitê de Integridade e Ética da F&F é responsável por estabelecer, disseminar e fazer
-                        cumprir as normas do código de conduta, além de investigar denúncias e assegurar um bom
-                        relacionamento com a comunidade.
-
-                        Você pode mandar denúncias anônimas se preferir, porém também pode se identificar para receber
-                        um retorno de nossa equipe.
-                    </p>
-                    <a href="https://www.fefengenharia.com.br/compliance/"><button>Faça sua denúncia</button></a>
-                </div>
-            </div>
-        </div>
-    </section><!--Seção 5 Compliance-->
     <section class="contato" id="contato">
         <div class="centro">
             <div class="form-ctt">

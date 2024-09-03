@@ -206,7 +206,7 @@ section.servicos .centro{
 }
 
 section.servicos .centro .container-estrutura{
-    width: 90%;
+    width: 70%;
     padding: 1em;
     background-color: #fff;
     border-radius: 2em;
@@ -215,6 +215,7 @@ section.servicos .centro .container-estrutura{
 
 section.servicos .centro .container-estrutura img{
     width: 100%;
+    border-radius: 1em;
 }
 
 section.servicos .centro .container-institucional{
@@ -226,17 +227,25 @@ section.servicos .centro .container-institucional{
     flex-wrap: wrap;
 }
 
-section.servicos .centro .container-institucional .missao-visao{
-    width: 50%;
+section.servicos .centro .container-institucional .atividades{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-section.servicos .centro .container-institucional .missao-visao .block{
-    margin: 10px 0;
+section.servicos .centro .container-institucional .atividades ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    text-align: justify;
+    margin: 10px;
 }
 
-section.servicos .centro .container-institucional .valores{
-    width: 50%;
-    padding-left: 6em;
+section.servicos .centro .container-institucional .atividades ul .descricao-atv{
+    margin: 0 1em;
 }
 /**/
 
