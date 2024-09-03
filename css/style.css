@@ -377,82 +377,6 @@ section.imagens-servico .wrapper {
 /**/
 
 /*Seção 5*/
-section.compliance{
-    position: relative;
-}
-
-section.compliance img{
-    z-index: 0;
-    width: 50%;
-    height: 510px;
-    position: absolute;
-    object-fit: cover;
-    object-position: center;
-}
-
-section.compliance .centro{
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-section.compliance .centro .fade-preto{
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(34,34,34,1) 90%);
-    width: 50%;
-    height: 510px;
-    position: relative;
-    z-index: 2;
-    margin-right: -4px;
-}
-
-section.compliance .centro .container-programa{
-    width: 50%;
-    padding-left: 2em;
-    color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    z-index: 1;
-}
-
-section.compliance .centro .container-programa hr{
-    margin: 0.5em 0;
-    opacity: 0.3;
-}
-
-section.compliance .centro .container-programa p{
-    font-size: 0.8em;
-}
-
-section.compliance .centro .container-programa button{
-    background-color: #b2b2b2;
-    padding: 0.8em;
-    margin: 2em 0;
-    outline: none;
-    border: 1px solid transparent;
-    border-radius: 0.5em;
-    color: #222;
-    font-weight: bold;
-    font-size: 1em;
-    transition: all 0.3s;
-}
-
-section.compliance .centro .container-programa button:hover{
-    border: 1px solid #f2f2f2;
-    background: none;
-    color: #f2f2f2;
-}
-
-section.compliance .centro .container-programa button:active{
-    transform: scale(0.9);
-}
-/**/
-
-/*Seção 6*/
 section.contato{
     background-color: #b2b2b2;
     color: #222;
@@ -491,6 +415,10 @@ section.contato .centro .form-ctt label .area{
     padding: 1em;
     margin-bottom: 1.5em;
     border: 1px solid transparent;
+}
+
+section.contato .centro .form-ctt label textarea.area{
+    resize: vertical;
 }
 
 section.contato .centro .form-ctt label .btn-enviar{
