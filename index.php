@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         content="A F&F Engenharia é uma empresa que atua no setor público, que cumpre com seus compromissos, buscando
                     sua excelência desde 2008.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./imagens/favicon.ico" />
+    <link rel="shortcut icon" href="./imagens/favicon.ico"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/reset.css">
