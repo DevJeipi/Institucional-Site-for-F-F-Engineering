@@ -59,6 +59,7 @@ body {
 .hFixa .centro .hNav .navbar .navlink {
     color: rgba(63, 63, 63, 1);
     font-weight: 500;
+    transition: all 0.2s;
 }
 
 .hFixa .centro .hNav .navbar .navlink:hover{
