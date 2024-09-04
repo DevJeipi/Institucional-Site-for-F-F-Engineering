@@ -1,39 +1,163 @@
-/*Reset*/
+/*RESET*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
 /**/
 
+/*Classes gerais*/
 body{
-    background-color: #f2f2f2;
+    background-color: #222;
     font-family: "Raleway", sans-serif;
 }
 
-main{
+div.centro{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+    margin-top: 5%;
+    border-radius: 2em;
+    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
 }
 
-main .logo{
-    width: 200px;
-    margin: 3em;
+p{
+    text-align: justify;
+}
+/**/
+
+/*Header*/
+.hlogo{
+    width: 100%;
+    padding: 4em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main .logo img{
+.hlogo a{
+    width: 30%;
+}
+
+.hlogo img{
     width: 100%;
 }
+/**/
 
-main h1{
-    font-size: 1.5em;
+/*Seção 1*/
+.programa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 2em 0;
+}   
+/**/
+
+/*Seção 2*/
+.termo-empresarial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 0 2em 0;
 }
 
-main form{
+.termo-empresarial .lista-topc{
+    padding-top: 1em;
+}
+
+.termo-empresarial .lista-topc .topico{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+
+.termo-empresarial .lista-topc .topico p{
+    padding-left: 0.5em;
+}
+
+.termo-empresarial .lista-topc .topico:nth-child(3) ul .subtopico{
+    margin: 1em;
+}
+
+.termo-empresarial .datas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 0 1em 0;
+    background-color: #b2b2b2;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.termo-empresarial .datas span{
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.termo-empresarial .codigo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1em;
+}
+/**/    
+
+/*Seção 3*/
+.canal-de-denuncia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.canal-de-denuncia .informacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.canal-de-denuncia .informacoes h1{
+    padding-bottom: 0.5em;
+}
+
+.canal-de-denuncia .informacoes p{
+    padding-bottom: 0.5em;
+}
+
+.canal-de-denuncia .informacoes .telefone{
+    background-color: #222;
+    color: #f2f2f2;
+    width: 50%;
+    padding: 0.2em 0;
+    margin: 0.3em 0;
+    border-radius: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.canal-de-denuncia form{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -41,12 +165,12 @@ main form{
     width: 40%;
 }
 
-main form label{
+.canal-de-denuncia form label{
     margin-top: 1em;
     padding-left: 1em;
 }
 
-main form .form-input{
+.canal-de-denuncia form .form-input{
     width: 100%;
     border-radius: 0.5em;
     border: 1px solid transparent;
@@ -56,7 +180,7 @@ main form .form-input{
     color: #f2f2f2;
     }
 
-main form .btn{
+.canal-de-denuncia form .btn{
     background-color: #f2f2f2;
     border: 1px solid #222;
     color: #222;
@@ -64,12 +188,12 @@ main form .btn{
     margin-top: 2em;
 }
 
-main form .btn:hover{
+.canal-de-denuncia form .btn:hover{
     border: 1px solid transparent;
     background-color: #222;
     color: #f2f2f2;
 }
 
-main form .btn:active{
+.canal-de-denuncia form .btn:active{
     transform: scale(0.9);
 }
