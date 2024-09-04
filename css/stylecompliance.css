@@ -64,6 +64,10 @@ p{
     flex-direction: column;
     padding: 0 0 2em 0;
 }   
+
+.programa .introducao{
+    text-align: center;
+}
 /**/
 
 /*Seção 2*/
@@ -74,6 +78,10 @@ p{
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0 0 2em 0;
+}
+
+.termo-empresarial .introducao{
+    text-align: center;
 }
 
 .termo-empresarial .lista-topc{
@@ -106,6 +114,7 @@ p{
     background-color: #b2b2b2;
     width: 100%;
     border-radius: 1em;
+    text-align: center;
 }
 
 .termo-empresarial .datas span{
