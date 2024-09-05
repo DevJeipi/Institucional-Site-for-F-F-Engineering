@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3449d8e4b5.js" crossorigin="anonymous"></script>
     <title>F&F Engenharia | Referência nos empreendimentos</title>
 </head>
 
@@ -32,7 +33,15 @@
                     <a class="navlink" href="https://www.fefengenharia.com.br/compliance.html">Compliance</a></li>
                     <a class="navlink" href="https://www.fefengenharia.com.br/#contato">Contato</a></li>
                 </nav>
-                <div class="menu-mobile"></div>
+                <div class="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul>
+                        <li><a href="https://fefengenharia.com.br/#servicos">Serviços</a></li>
+                        <li><a href="https://fefengenharia.com.br/#quem-somos">Quem somos</a></li>
+                        <li><a href="https://fefengenharia.com.br/compliance.html">Compliance</a></li>
+                        <li><a href="https://fefengenharia.com.br/#contato">Contato</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header><!--Header Fixa-->
@@ -119,13 +128,14 @@
             <div class="form-ctt">
                 <h1 class="introducao">CONTATO</h1>
                 <p>Aqui encontra-se o setor de suporte. Caso você quiser fazer comentários, dúvidas, sugestões ou caso precisar de informações basta preencher o formulário abaixo! O mais rápido possível nossa equipe entrará em contato com você. Aguardamos seu contato! </p>
-                <form action="https://formsubmit.co/joao.hubner07@gmail.com" method="POST">
+                <form action="https://formsubmit.co/fefengenharia@ig.com.br" method="POST">
                     <label class="form-lb">Seu Nome:*<input class="area" name="nome" type="text" required></label>
                     <label class="form-lb">Seu email:*<input class="area" name="email" type="email" required></label>
                     <label class="form-lb">Assunto:*<input class="area" name="assunto" type="text" required></label>
                     <label class="form-lb">Mensagem:* <textarea class="area" name="mensagem" id="mensagem" required></textarea></label>
                     <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value="https://fefengenharia.com.br/obrigado.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://fefengenharia.com.br/obrigadoctt.html">
                     <label><input class="btn-enviar" type="submit"></label>
                 </form>
             </div>
@@ -144,6 +154,12 @@
     <footer class="rodape">
         © Copyright 2024 - Todos os direitos reservados
     </footer>
+    <script>
+        //Menu Responsivo.
+        $('.menu-mobile i').click(function() {
+            $('.menu-mobile').find('ul').slideToggle();
+        })
+    </script>
 </body>
 
 </html>

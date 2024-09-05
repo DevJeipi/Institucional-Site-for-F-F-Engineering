@@ -16,15 +16,6 @@ body {
 .clear{
     clear: both;
 }
-
-.menu-desktop{
-    display: block;
-}
-
-.menu-mobile{
-    display: none;
-}
-
 /**/
 
 /*Header*/
@@ -44,7 +35,7 @@ body {
 }
 
 .hFixa .centro .hNav .logo-link {
-    width: 10%;
+    width: 110px;
 }
 
 .hFixa .centro .hNav .logo-link img {
@@ -77,6 +68,37 @@ body {
     border-top-color: var(--e-nav-menu-divider-color, #000);
     align-self: center;
     margin: 0 1em;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+
+.menu-mobile i{
+    font-size: 33px;
+    cursor: pointer;
+    color: #222;
+}
+
+.menu-mobile ul {
+    left: 0;
+    top: 75px;
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+
+.menu-mobile li {
+    padding: 8px 0;
+    margin: 1px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    outline: none;
 }
 
 
