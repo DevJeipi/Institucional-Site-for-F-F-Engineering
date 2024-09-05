@@ -11,10 +11,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = $data['mensagem'];
 
     // Prepara o conteúdo do email
-    $to = "fefengenharia@ig.com.br";
+    $to = "joao.hubner07@gmail.com";
     $subject = "Mensagem de " . $motivo;
     $body = "Nome: " . $nome . "\nEmail: " . $email . "\nMotivo: " . $motivo . "\n\nMensagem: \n" . $mensagem;
-    $headers = "From: no-reply@fefengenharia.com.br";
+    $headers = "From: joaopedroghilardi@gmail.com";
     if ($email !== 'Email não fornecido') {
         // Se o email foi fornecido, adiciona o campo Reply-To
         $headers .= "\r\nReply-To: " . $email;
