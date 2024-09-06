@@ -10,19 +10,13 @@
     }
     /**/
 
-    /*Seção 2*/
-    .container-descricao img{
-        width: 80%;
-    }
-
-    .container-descricao p{
-        width: 75%;
-    }
-    /**/
-
     /*Seção 3*/
     .servicos .centro .introducao{
         text-align: center;
+    }
+
+    section.servicos .centro .container-estrutura{
+        width: 85%;
     }
 
     .servicos .centro .container-institucional .atividades ul{
@@ -41,12 +35,23 @@
     /**/
 
     /*Seção 5*/
-    .contato .centro{
+    section.contato .centro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
 
-    .contato .centro .form-ctt{
+    section.contato .centro .form-ctt{
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    section.contato .centro .form-ctt .introducao{
+        text-align: center;
     }
 
     .contato .centro .outros-ctt{
@@ -61,12 +66,12 @@
     /*Seção 2*/
     .container-descricao{flex-direction: column;}
     .container-descricao img{
-        width: 50%;
+        width: 70%;
     }
     .container-descricao p{
         border-top-right-radius: 0;
         border-bottom-left-radius: 2em;
-        width: 45%;
+        width: 65%;
         padding: 24px;
         font-size: 1.1em;
         margin-right: -24px;
