@@ -169,11 +169,20 @@
     </section>
   </div>
   <script>
-    //Menu Responsivo.
-    $('.menu-mobile i').click(function () {
-      $('.menu-mobile').find('ul').slideToggle();
-    })
-  </script>
+    // Seleciona o ícone e o menu UL
+    const menuIcon = document.querySelector('.menu-mobile i');
+    const menu = document.querySelector('.menu-mobile ul');
+
+    // Adiciona o evento de clique ao ícone
+    menuIcon.addEventListener('click', () => {
+        // Alterna a visibilidade do menu
+        if (menu.style.display === 'none' || menu.style.display === '') {
+            menu.style.display = 'block';  // Mostra o menu
+        } else {
+            menu.style.display = 'none';   // Esconde o menu
+        }
+    });
+</script>
 </body>
 
 </html>

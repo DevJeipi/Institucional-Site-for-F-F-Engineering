@@ -35,10 +35,10 @@
                 <div class="menu-mobile">
                     <i class="fa-solid fa-bars"></i>
                     <ul>
-                        <li><a href="https://fefengenharia.com.br/#servicos">Serviços</a></li>
-                        <li><a href="https://fefengenharia.com.br/#quem-somos">Quem somos</a></li>
-                        <li><a href="https://fefengenharia.com.br/compliance.html">Compliance</a></li>
-                        <li><a href="https://fefengenharia.com.br/#contato">Contato</a></li>
+                        <a href="https://fefengenharia.com.br/#servicos"><li>Serviços</li></a>
+                        <a href="https://fefengenharia.com.br/#quem-somos"><li>Quem somos</li></a>
+                        <a href="https://fefengenharia.com.br/compliance.html"><li>Compliance</li></a>
+                        <a href="https://fefengenharia.com.br/#contato"><li>Contato</li></a>
                     </ul>
                 </div>
             </nav>
@@ -171,10 +171,19 @@
         © Copyright 2024 - Todos os direitos reservados
     </footer>
     <script>
-        //Menu Responsivo.
-        $('.menu-mobile i').click(function () {
-            $('.menu-mobile').find('ul').slideToggle();
-        })
+        // Seleciona o ícone e o menu UL
+        const menuIcon = document.querySelector('.menu-mobile i');
+        const menu = document.querySelector('.menu-mobile ul');
+
+        // Adiciona o evento de clique ao ícone
+        menuIcon.addEventListener('click', () => {
+            // Alterna a visibilidade do menu
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';  // Mostra o menu
+            } else {
+                menu.style.display = 'none';   // Esconde o menu
+            }
+        });
     </script>
 </body>
 
