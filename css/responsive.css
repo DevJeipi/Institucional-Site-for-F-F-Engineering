@@ -9,6 +9,50 @@
         display: block;
     }
     /**/
+
+    /*Seção 2*/
+    .container-descricao img{
+        width: 80%;
+    }
+
+    .container-descricao p{
+        width: 75%;
+    }
+    /**/
+
+    /*Seção 3*/
+    .servicos .centro .introducao{
+        text-align: center;
+    }
+
+    .servicos .centro .container-institucional .atividades ul{
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .servicos .centro .container-institucional .atividades ul .descricao-atv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 0;
+    }
+    /**/
+
+    /*Seção 5*/
+    .contato .centro{
+        flex-direction: column;
+    }
+
+    .contato .centro .form-ctt{
+        width: 100%;
+    }
+
+    .contato .centro .outros-ctt{
+        width: 100%;
+    }
+    /**/
 }
 
 @media screen and (max-width: 1150px){

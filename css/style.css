@@ -261,6 +261,7 @@ section.servicos .centro .container-institucional .atividades ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     font-size: 0.8em;
     text-align: justify;
     margin: 10px;
