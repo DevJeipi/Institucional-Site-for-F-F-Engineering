@@ -229,6 +229,24 @@ p{
     flex-direction: column;
     padding-top: 1em;
 }
+
+.termo-empresarial .codigo .pdf-link{
+    background-color: #b2b2b2;
+    color: #222;
+    padding: 0.5em;
+    border: 1px solid #222;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    transition: all 0.3s;
+}
+
+.termo-empresarial .codigo .pdf-link:active{
+    transform: scale(0.9);
+}
+
+.termo-empresarial .codigo .pdf-link i{
+    margin-right: 0.5em;
+}
 /**/    
 
 /*Seção 3*/
