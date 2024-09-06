@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+
+    /*Header*/
+    .hFixa .hcentro .hNav .menu-desktop {
+        display: none;
+    }
+
+    .hFixa .hcentro .hNav .menu-mobile {
+        display: block;
+    }
+
+    /**/
+
+    /*Seção 2*/
+    .termo-empresarial .datas h1 {
+        font-size: 1.1em;
+    }
+
+    .termo-empresarial .datas span {
+        font-size: 1em;
+    }
+
+    /**/
+
+    /*Seção 3*/
+    .canal-de-denuncia form {
+        width: 70%;
+    }
+
+    /**/
+}

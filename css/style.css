@@ -90,14 +90,15 @@ body {
 }
 
 .menu-mobile li {
-    padding: 8px 0;
+    padding: 0.5em 0;
     margin: 1px;
     text-align: center;
     font-weight: bold;
     display: block;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 15px;
+    border-radius: 1em;
+    background-color: rgb(178, 178, 178, 0.7);
+    color: #222;
     outline: none;
 }
 

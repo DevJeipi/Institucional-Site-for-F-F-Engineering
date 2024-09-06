@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/stylecompliance.css" />
+  <link rel="stylesheet" href="./css/responsivecompliance.css">
+  <script src="https://kit.fontawesome.com/3449d8e4b5.js" crossorigin="anonymous"></script>
   <title>Programa de Integridade | F&F Engenharia</title>
 </head>
 
@@ -28,10 +30,10 @@
         <div class="menu-mobile">
           <i class="fa-solid fa-bars"></i>
           <ul>
-            <li><a href="https://fefengenharia.com.br/#servicos">Serviços</a></li>
-            <li><a href="https://fefengenharia.com.br/#quem-somos">Quem somos</a></li>
-            <li><a href="https://fefengenharia.com.br/compliance.html">Compliance</a></li>
-            <li><a href="https://fefengenharia.com.br/#contato">Contato</a></li>
+            <a href="https://fefengenharia.com.br/#servicos"><li>Serviços</li></a>
+            <a href="https://fefengenharia.com.br/#quem-somos"><li>Quem somos</li></a>
+            <a href="https://fefengenharia.com.br/compliance.html"><li>Compliance</li></a>
+            <a href="https://fefengenharia.com.br/#contato"><li>Contato</li></a>
           </ul>
         </div>
       </nav>
@@ -166,6 +168,12 @@
       </form>
     </section>
   </div>
+  <script>
+    //Menu Responsivo.
+    $('.menu-mobile i').click(function () {
+      $('.menu-mobile').find('ul').slideToggle();
+    })
+  </script>
 </body>
 
 </html>
