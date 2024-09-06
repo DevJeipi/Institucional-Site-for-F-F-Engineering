@@ -48,14 +48,16 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 5em 0 2em 0;
     }
 
     section.contato .centro .form-ctt .introducao{
         text-align: center;
     }
 
-    .contato .centro .outros-ctt{
+    section.contato .centro .outros-ctt{
         width: 100%;
+        padding: 2em 0;
     }
     /**/
 }
