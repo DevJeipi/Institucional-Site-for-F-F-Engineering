@@ -51,6 +51,24 @@ p{
     width: 100%;
     height: 150px;
 }
+
+.pdf-link{
+    background-color: #b2b2b2;
+    color: #222;
+    padding: 0.5em;
+    border: 1px solid #222;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    transition: all 0.3s;
+}
+
+.pdf-link:active{
+    transform: scale(0.9);
+}
+
+.pdf-link i{
+    margin-right: 0.5em;
+}
 /**/
 
 /*Header*/
@@ -229,27 +247,52 @@ p{
     flex-direction: column;
     padding-top: 1em;
 }
-
-.termo-empresarial .codigo .pdf-link{
-    background-color: #b2b2b2;
-    color: #222;
-    padding: 0.5em;
-    border: 1px solid #222;
-    border-radius: 0.5em;
-    margin-top: 1em;
-    transition: all 0.3s;
-}
-
-.termo-empresarial .codigo .pdf-link:active{
-    transform: scale(0.9);
-}
-
-.termo-empresarial .codigo .pdf-link i{
-    margin-right: 0.5em;
-}
-/**/    
+/**/
 
 /*Seção 3*/
+.politicas-de-integridade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 0 2em 0;
+}
+
+.politicas-de-integridade .lista-politicas{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.politicas-de-integridade .lista-politicas .politica{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #222;
+    padding: 0.8em;
+    border-radius: 1em;
+}
+
+.politicas-de-integridade .lista-politicas .politica h1{
+    font-weight: 500;
+    color: #f2f2f2;
+}
+
+.politicas-de-integridade .lista-politicas .politica .pdf-link{
+    margin: 0 0 0 1em;
+    border: transparent;
+
+}
+/**/
+
+/*Seção 4*/
 .canal-de-denuncia{
     display: flex;
     justify-content: center;

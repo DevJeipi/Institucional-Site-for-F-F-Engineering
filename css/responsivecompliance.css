@@ -23,6 +23,16 @@
     /**/
 
     /*Seção 3*/
+    .politicas-de-integridade .lista-politicas .politica{
+        justify-content: center;
+    }
+
+    .politicas-de-integridade .lista-politicas .politica .pdf-link{
+        margin: 1em 0 0 0;
+    }
+    /**/
+
+    /*Seção 4*/
     .canal-de-denuncia form {
         width: 70%;
     }
