@@ -170,7 +170,9 @@
         <span class="telefone">Se preferir, entre em contato pelo nosso endereço
           telefônico: +55 51 3022-3818</span>
       </div>
-      <form action="https://formsubmit.co/fefengenharia@ig.com.br" method="POST">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
         <label for="nome">Nome(Opcional):</label>
         <input class="form-input" type="text" id="nome" name="Nome" />
 
@@ -182,9 +184,9 @@
 
         <label for="mensagem">Mensagem:</label>
         <textarea class="form-input" name="Mensagem" id="mensagem" required></textarea>
-        <input type="hidden" name="_template" value="box">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://fefengenharia.com.br/obrigadocompliance.html">
+        
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <input type="hidden" name="redirect" value="https://fefengenharia.com.br/obrigadocompliance.html">
 
         <input class="form-input btn btn-form" type="submit" value="Enviar" />
       </form>
