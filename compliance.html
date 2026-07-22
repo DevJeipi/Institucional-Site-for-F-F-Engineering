@@ -190,7 +190,8 @@
       </ul>
     </section>
 
-    <section class="canal-de-denuncia" id="canal-denuncia">
+
+    <section class="canal-de-denuncia">
       <div class="informacoes">
         <h2 class="introducao">CANAL DE DENÚNCIA</h2>
         <p>
@@ -204,8 +205,11 @@
             mantida em estrito sigilo, não havendo qualquer possibilidade de retaliação ao denunciante.</b></p>
         <span class="telefone">Se preferir, entre em contato pelo nosso endereço telefônico: +55 (51) 3022-3818</span>
       </div>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="f2204c5f-8b44-4341-9b7e-e00e35bde33c">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <input type="hidden" name="redirect" value="https://fefengenharia.com.br/obrigadocompliance.html">
 
-      <form action="https://formsubmit.co/fefengenharia@ig.com.br" method="POST">
         <label for="nome">Nome (Opcional):</label>
         <input class="form-input" type="text" id="nome" name="Nome">
 
@@ -217,10 +221,6 @@
 
         <label for="mensagem">Mensagem:*</label>
         <textarea class="form-input" id="mensagem" name="Mensagem" required style="min-height: 120px;"></textarea>
-
-        <input type="hidden" name="_template" value="box">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="obrigadocompliance.html">
 
         <input class="form-input btn-form" type="submit" value="Enviar">
       </form>
