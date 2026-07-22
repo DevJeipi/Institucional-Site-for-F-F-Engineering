@@ -1,168 +1,255 @@
-/*Classes Auxiliares*/
+/* ==========================================================================
+   F&F ENGENHARIA E CONSTRUÇÃO - IDENTIDADE VISUAL CLASSICA (PRETO & CINZA)
+   ========================================================================== */
+
+/* --- VARIÁVEIS & DESIGN TOKENS (PRETO & CINZA ORIGINAL) --- */
+:root {
+    /* Cores Originais Mantidas */
+    --color-bg-dark: #222222;          /* Fundo Escuro Principal */
+    --color-bg-light: #f2f2f2;         /* Fundo Claro Principal */
+    --color-gray-medium: #b2b2b2;      /* Cinza Médio Secundário */
+    --color-gray-dark: #777777;        /* Cinza Destaque / Blocos */
+    --color-text-dark: #f2f2f2;        /* Texto Claro sobre Fundo Escuro */
+    --color-text-light: rgba(63, 63, 63, 1); /* Texto Escuro sobre Fundo Claro */
+
+    /* Fontes */
+    --font-main: 'Raleway', system-ui, -apple-system, sans-serif;
+
+    /* Transições & Raios */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --radius-sm: 6px;
+    --radius-md: 1rem;
+    --radius-lg: 2rem;
+}
+
+/* --- RESET & BASE --- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* --- LAYOUT GLOBAL & CONTAINER --- */
 div.centro {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2%;
+    width: 100%;
 }
 
-body {
-    --e-nav-menu-divider-content: "";
-    --e-nav-menu-divider-style: solid;
-    --e-nav-menu-divider-width: 1px;
-    --e-nav-menu-divider-color: rgba(63, 63, 63, 0.3);
-    background-color: #222;
+.introducao {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.clear{
-    clear: both;
+.introducao.dark-text {
+    color: var(--color-text-light);
 }
-/**/
 
-/*Header*/
+.block {
+    background-color: var(--color-gray-dark);
+    width: 15px;
+    height: 15px;
+    margin: 10px auto 0;
+}
+
+/* --- HEADER FIXO --- */
 .hFixa {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: var(--color-bg-light);
     border-bottom: 1px solid rgba(63, 63, 63, 0.3);
-    z-index: 100;
+    z-index: 1000;
+    transition: var(--transition-normal);
 }
 
-.hFixa .centro .hNav {
+.hFixa .hNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em 0;
+    padding: 1.2em 0;
 }
 
-.hFixa .centro .hNav .logo-link {
+.logo-link {
     width: 110px;
-}
-
-.hFixa .centro .hNav .logo-link img {
-    width: 100%;
-}
-
-.hFixa .centro .hNav .navbar {
-    display: flex;
-    justify-content: center;
-}
-
-.hFixa .centro .hNav .navbar .navlink {
-    color: rgba(63, 63, 63, 1);
-    font-weight: 500;
-    transition: all 0.2s;
-}
-
-.hFixa .centro .hNav .navbar .navlink:hover{
-    transform: scale(1.05);
-    transition: all 0.1s;   
-    color: #777;
-}
-
-.hFixa .centro .hNav .navbar .navlink:nth-child(-n+3)::after {
-    content: var(--e-nav-menu-divider-content, none);
-    height: var(--e-nav-menu-divider-height, 35%);
-    border-left: var(--e-nav-menu-divider-width, 2px) var(--e-nav-menu-divider-style, solid) var(--e-nav-menu-divider-color, #000);
-    border-bottom-color: var(--e-nav-menu-divider-color, #000);
-    border-right-color: var(--e-nav-menu-divider-color, #000);
-    border-top-color: var(--e-nav-menu-divider-color, #000);
-    align-self: center;
-    margin: 0 1em;
-}
-
-.menu-mobile{
-    display: none;
-}
-
-
-.menu-mobile i{
-    font-size: 33px;
-    cursor: pointer;
-    color: #222;
-}
-
-.menu-mobile ul {
-    left: 0;
-    top: 75px;
-    display: none;
-    width: 100%;
-    position: absolute;
-
-}
-
-.menu-mobile li {
-    padding: 0.5em 0;
-    margin: 1px;
-    text-align: center;
-    font-weight: bold;
     display: block;
-    width: 100%;
-    border-radius: 1em;
-    background-color: rgb(178, 178, 178, 0.7);
-    color: #222;
-    outline: none;
 }
 
+.logo-img {
+    width: 100%;
+}
 
-/**/
+/* Menu Desktop */
+.navbar.menu-desktop {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
 
-/*Seção Home*/
+.navbar.menu-desktop .navlink {
+    color: var(--color-text-light);
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: var(--transition-fast);
+}
+
+.navbar.menu-desktop .navlink:hover {
+    transform: scale(1.05);
+    color: var(--color-gray-dark);
+}
+
+/* Divisores do menu clássico */
+.navbar.menu-desktop .navlink:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    height: 14px;
+    margin-left: 1.5rem;
+    border-right: 1px solid rgba(63, 63, 63, 0.4);
+    vertical-align: middle;
+}
+
+/* Menu Mobile */
+.menu-mobile-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-bg-dark);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+}
+
+.menu-mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-bg-light);
+    border-bottom: 2px solid var(--color-bg-dark);
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu-mobile-nav.active {
+    display: block;
+}
+
+.menu-mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+
+.menu-mobile-nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    color: var(--color-bg-dark);
+    background-color: rgba(178, 178, 178, 0.5);
+    border-radius: var(--radius-sm);
+    text-align: center;
+}
+
+.menu-mobile-nav a:hover {
+    background-color: var(--color-bg-dark);
+    color: var(--color-bg-light);
+}
+
+/* --- SEÇÃO 1 HOME (HERO) --- */
 section.home {
     width: 100%;
     height: 720px;
     position: relative;
     z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+.home-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 0;
 }
 
 .home .centro {
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.home img {
-    width: 100%;
-    height: 620px;
-    object-fit: cover;
-    position: absolute;
-}
-
-.home .container-headline {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.home .container-headline h1 {
-    font-size: 2.5em;
-    color: #f2f2f2;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: relative;
     z-index: 1;
 }
 
-.home .container-headline h2 {
-    color: #f2f2f2;
-    z-index: 1;
-    font-size: 1em;
+.container-headline h1 {
+    font-size: clamp(2rem, 4.5vw, 2.75rem);
+    font-weight: 700;
+    color: var(--color-text-dark);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.container-headline h2 {
+    color: var(--color-text-dark);
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 400;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
 }
 
-/**/
-
-/*Seção 2*/
+/* --- SEÇÃO 2 QUEM SOMOS --- */
 section.quem-somos {
-    color: #f2f2f2;
-    padding-bottom: 60px;
-}
-
-.quem-somos .centro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    color: var(--color-text-dark);
+    padding: 60px 0;
+    background-color: var(--color-bg-dark);
 }
 
 .container-text {
@@ -174,19 +261,14 @@ section.quem-somos {
 }
 
 .container-text .minitext {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .container-text .bigtext {
-    font-size: 3em;
-}
-
-.block {
-    background-color: #777;
-    width: 10px;
-    height: 10px;
-    margin-top: 10px;
+    font-size: 3rem;
+    font-weight: 800;
 }
 
 .container-descricao {
@@ -203,289 +285,631 @@ section.quem-somos {
 }
 
 .container-descricao p {
-    background-color: #777;
-    width: 30%;
+    background-color: var(--color-gray-dark);
+    width: 35%;
     margin-left: -24px;
     z-index: 0;
     padding: 36px 36px 36px 48px;
     border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
-    font-size: 1.3em;
+    font-size: 1.25rem;
+    color: #ffffff;
+    line-height: 1.6;
 }
 
-/**/
-
-/*Seção 3*/
-section.servicos .centro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #f2f2f2;
-    padding-bottom: 60px;
+/* --- SEÇÃO 3 SERVIÇOS & ESTRUTURA --- */
+section.servicos {
+    padding: 60px 0;
+    background-color: var(--color-bg-dark);
 }
 
-.introducao{
-    font-size: 2em;
-}
-
-section.servicos .centro .container-estrutura{
-    width: 70%;
+section.servicos .container-estrutura {
+    width: 75%;
+    max-width: 900px;
     padding: 1em;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 2em;
-    margin: 1.5em 0 3em 0;
+    margin: 1.5em auto 3em auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-section.servicos .centro .container-estrutura img{
+section.servicos .container-estrutura img {
     width: 100%;
     border-radius: 1em;
 }
 
-section.servicos .centro .container-institucional{
-    width: 100%;
+.container-institucional .atividades ul {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 1.5rem;
+    margin: 20px 0;
 }
 
-section.servicos .centro .container-institucional .atividades{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.descricao-atv {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    flex: 1;
 }
 
-section.servicos .centro .container-institucional .atividades ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    font-size: 0.8em;
+.descricao-atv h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.descricao-atv p {
+    font-size: 0.95rem;
+    color: #cccccc;
     text-align: justify;
-    margin: 10px;
 }
 
-section.servicos .centro .container-institucional .atividades ul .descricao-atv{
-    margin: 0 1em;
+.instancia-interna {
+    background-color: rgba(178, 178, 178, 0.15);
+    border: 1px solid var(--color-gray-medium);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    margin-top: 1.5rem;
+    text-align: center;
 }
-/**/
 
-/*Seção 4*/
+.instancia-interna h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.instancia-interna p {
+    font-size: 0.95rem;
+    color: #cccccc;
+}
+
+/* --- SEÇÃO 4 GALERIA DE SERVIÇOS --- */
 section.imagens-servico {
-    background-color: #b2b2b2;
-    color: #222;
-    padding-bottom: 60px;
+    background-color: var(--color-gray-medium);
+    color: var(--color-bg-dark);
+    padding: 60px 0;
 }
 
-section.imagens-servico .container-text {
-    padding-top: 100px;
+section.imagens-servico .container-text .minitext {
+    color: var(--color-bg-dark);
+}
+
+section.imagens-servico .container-text .bigtext {
+    color: var(--color-bg-dark);
 }
 
 section.imagens-servico .container-text .block {
-    background-color: #222;
+    background-color: var(--color-bg-dark);
 }
 
-section.imagens-servico .wrapper {
-    width: 90%;
-    max-width: 1536px;
-    margin-inline: auto;
+/* Carrossel continuo refinado */
+.wrapper {
+    width: 100%;
+    margin: 2.5rem auto 0;
     position: relative;
-    height: 300px;
-    margin-top: 5rem;
+    height: 280px;
     overflow: hidden;
-    mask-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 1) 20%,
-            rgba(0, 0, 0, 1) 80%,
-            rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    animation: scrollLeft 35s linear infinite;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
 }
 
 @keyframes scrollLeft {
-    to {
-        left: -200px;
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.carousel-card {
+    width: 220px;
+    height: 270px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-fast);
+}
+
+.carousel-card:hover img {
+    transform: scale(1.05);
+}
+
+/* --- SEÇÃO 5 CONTATO --- */
+section.contato {
+    background-color: var(--color-gray-medium);
+    color: var(--color-bg-dark);
+    padding: 60px 0;
+}
+
+section.contato .centro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.form-ctt {
+    width: 50%;
+}
+
+.form-ctt .introducao {
+    color: var(--color-bg-dark);
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.form-ctt p {
+    margin-bottom: 2rem;
+    color: #333333;
+    font-size: 0.95rem;
+}
+
+.form-lb {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: var(--color-bg-dark);
+}
+
+.form-lb .area {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    margin-top: 0.4rem;
+    border: 1px solid #999999;
+    border-radius: var(--radius-sm);
+    background-color: #ffffff;
+    color: var(--color-bg-dark);
+    transition: var(--transition-fast);
+}
+
+.form-lb .area:focus {
+    outline: none;
+    border-color: var(--color-bg-dark);
+    box-shadow: 0 0 0 2px rgba(34, 34, 34, 0.2);
+}
+
+textarea.area {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-enviar {
+    background-color: var(--color-bg-dark);
+    color: var(--color-bg-light);
+    border: 1px solid transparent;
+    border-radius: 0.5em;
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.btn-enviar:hover {
+    background: transparent;
+    border: 1px solid var(--color-bg-dark);
+    color: var(--color-bg-dark);
+}
+
+.btn-enviar:active {
+    transform: scale(0.95);
+}
+
+.outros-ctt {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.outros-ctt .telefone {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-bg-dark);
+    margin-top: 0.5rem;
+}
+
+.outros-ctt h3 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-bg-dark);
+}
+
+/* --- COMPLIANCE PAGE (DESIGN ORIGINAL EM CARD BRANCO/CINZA) --- */
+.compliance-body {
+    background-color: var(--color-bg-dark);
+    padding-top: 110px;
+    padding-bottom: 60px;
+}
+
+.compliance-main-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4% 3%;
+    border-radius: 2em;
+    background-color: var(--color-bg-light);
+    color: var(--color-bg-dark);
+}
+
+.compliance-main-card .introducao {
+    color: var(--color-bg-dark);
+}
+
+.compliance-main-card p,
+.compliance-main-card span:not(.telefone),
+.compliance-main-card li {
+    color: var(--color-bg-dark);
+}
+
+.compliance-main-card p {
+    color: #333333;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.logo-header img {
+    max-width: 220px;
+}
+
+.programa .introducao {
+    color: var(--color-bg-dark);
+}
+
+.programa p {
+    color: #333333;
+    line-height: 1.7;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.termo-empresarial {
+    margin-top: 3rem;
+}
+
+.termo-empresarial .introducao {
+    color: var(--color-bg-dark);
+}
+
+.termo-empresarial p {
+    color: #333333;
+    line-height: 1.7;
+}
+
+.lista-topc {
+    margin: 2rem 0;
+}
+
+.lista-topc .topico {
+    margin-bottom: 1.5rem;
+}
+
+.lista-topc .topico h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--color-bg-dark);
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.subtopico {
+    margin: 0.75rem 0 0.75rem 1.5rem;
+}
+
+.datas {
+    background-color: var(--color-gray-medium);
+    width: 100%;
+    border-radius: 1em;
+    padding: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.datas h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: var(--color-bg-dark);
+}
+
+.datas span {
+    font-size: 1.05rem;
+    color: var(--color-bg-dark);
+}
+
+.codigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.codigo h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-bg-dark);
+    margin-bottom: 0.5rem;
+}
+
+.pdf-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--color-gray-medium);
+    color: var(--color-bg-dark);
+    padding: 0.7em 1.4em;
+    border: 1px solid var(--color-bg-dark);
+    border-radius: 0.5em;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    transition: var(--transition-fast);
+}
+
+.pdf-link:hover {
+    background-color: var(--color-bg-dark);
+    color: var(--color-bg-light);
+}
+
+/* --- POLÍTICAS DE INTEGRIDADE --- */
+.politicas-de-integridade {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(63, 63, 63, 0.2);
+}
+
+.lista-politicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.politica {
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(63, 63, 63, 0.15);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: var(--transition-fast);
+}
+
+.politica:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: var(--color-bg-dark);
+}
+
+.politica h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-bg-dark);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.politica .pdf-link {
+    margin-top: auto;
+    width: 100%;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 0.6em 1.2em;
+}
+
+/* Canal de Denúncia Form no Compliance */
+.canal-de-denuncia {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canal-de-denuncia .informacoes {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.canal-de-denuncia .informacoes .telefone {
+    display: block;
+    background-color: var(--color-bg-dark);
+    color: var(--color-bg-light);
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 1rem 0;
+    border-radius: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.canal-de-denuncia form {
+    width: 55%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.canal-de-denuncia form label {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: var(--color-bg-dark);
+}
+
+.canal-de-denuncia form .form-input {
+    width: 100%;
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+    padding: 0.8em;
+    margin-top: 0.3rem;
+    background-color: var(--color-bg-dark);
+    color: var(--color-bg-light);
+}
+
+.canal-de-denuncia form .form-input:focus {
+    outline: none;
+    border: 1px solid var(--color-gray-medium);
+}
+
+.canal-de-denuncia form .btn-form {
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-bg-dark);
+    color: var(--color-bg-dark);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: var(--transition-fast);
+}
+
+.canal-de-denuncia form .btn-form:hover {
+    background-color: var(--color-bg-dark);
+    color: var(--color-bg-light);
+}
+
+/* --- PÁGINAS DE OBRIGADO (CLASSICO E ELEGANTE) --- */
+.thank-you-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.thank-you-section h1 {
+    z-index: 1;
+    color: var(--color-text-dark);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    margin-bottom: 1.5rem;
+}
+
+.thank-you-section a {
+    z-index: 1;
+    color: var(--color-text-dark);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.thank-you-section a:hover {
+    color: var(--color-gray-medium);
+}
+
+.thank-you-black-overlay {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.thank-you-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* --- RODAPÉ --- */
+.rodape {
+    height: 50px;
+    background-color: var(--color-gray-medium);
+    color: var(--color-bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media screen and (max-width: 1150px) {
+    .container-descricao {
+        flex-direction: column;
+    }
+    
+    .container-descricao img {
+        width: 70%;
+    }
+    
+    .container-descricao p {
+        width: 75%;
+        margin-left: 0;
+        margin-top: -20px;
+        border-radius: 1em;
+        padding: 24px;
     }
 }
 
-.item {
-    width: 200px;
-    height: 300px;
-    background-color: red;
-    border-radius: 6px;
-    position: absolute;
-    left: max(calc(200px * 11), 100%);
-    animation-name: scrollLeft;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+@media screen and (max-width: 768px) {
+    .navbar.menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile-btn {
+        display: block;
+    }
+
+    section.servicos .container-estrutura {
+        width: 90%;
+    }
+
+    .container-institucional .atividades ul {
+        flex-direction: column;
+    }
+
+    section.contato .centro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-ctt, .outros-ctt {
+        width: 100%;
+    }
+
+    .canal-de-denuncia form {
+        width: 90%;
+    }
 }
-
-.item1 {
-    animation-delay: calc(30s / 11 * (11 - 1) * -1);
-    background: url(../imagens/foto1FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item2 {
-    animation-delay: calc(30s / 11 * (11 - 2) * -1);
-    background: url(../imagens/foto2FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item3 {
-    animation-delay: calc(30s / 11 * (11 - 3) * -1);
-    background: url(../imagens/foto3FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item4 {
-    animation-delay: calc(30s / 11 * (11 - 4) * -1);
-    background: url(../imagens/foto13FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item5 {
-    animation-delay: calc(30s / 11 * (11 - 5) * -1);
-    background: url(../imagens/foto12FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item6 {
-    animation-delay: calc(30s / 11 * (11 - 6) * -1);
-    background: url(../imagens/foto6FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item7 {
-    animation-delay: calc(30s / 11 * (11 - 7) * -1);
-    background: url(../imagens/foto7FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item8 {
-    animation-delay: calc(30s / 11 * (11 - 8) * -1);
-    background: url(../imagens/foto8FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item9 {
-    animation-delay: calc(30s / 11 * (11 - 9) * -1);
-    background: url(../imagens/foto9FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item10 {
-    animation-delay: calc(30s / 11 * (11 - 10) * -1);
-    background: url(../imagens/foto10FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item11 {
-    animation-delay: calc(30s / 11 * (11 - 11) * -1);
-    background: url(../imagens/foto11FeF.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-/**/
-
-/*Seção 5*/
-section.contato{
-    background-color: #b2b2b2;
-    color: #222;
-}
-
-section.contato .centro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-section.contato .centro .form-ctt{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 50%;
-    padding: 5em 1.5em 5em 0;
-}
-
-section.contato .centro .form-ctt .introducao{
-    margin-bottom: 1em;
-}
-
-section.contato .centro .form-ctt p{
-    margin-bottom: 3em;
-}
-
-section.contato .centro .form-ctt .form-lb{
-    width: 100%;
-}
-
-section.contato .centro .form-ctt label .area{
-    width: 100%;
-    padding: 1em;
-    margin-bottom: 1.5em;
-    border: 1px solid transparent;
-}
-
-section.contato .centro .form-ctt label textarea.area{
-    resize: vertical;
-}
-
-section.contato .centro .form-ctt label .btn-enviar{
-    background-color: #222;
-    color: #f2f2f2;
-    border: 1px solid transparent;
-    border-radius: 0.5em;
-    padding: 0.8em 1.2em;
-    font-size: 1em;
-    font-weight: bold;
-    transition: all 0.3s;
-}
-
-section.contato .centro .form-ctt label .btn-enviar:hover{
-    background: none;
-    border: 1px solid #222;
-    color: #222;
-}
-
-section.contato .centro .form-ctt label .btn-enviar:active{
-    transform: scale(0.9);
-}
-
-section.contato .centro .outros-ctt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-    padding: 5em 0 5em 1.5em;
-}
-/**/
-
-/*Footer*/
-.rodape{
-    height: 30px;
-    background-color: #b2b2b2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/**/
-
-
-

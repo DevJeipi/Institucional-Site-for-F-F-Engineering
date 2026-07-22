@@ -2,50 +2,88 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./imagens/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="F&F Engenharia e Construção">
+  <meta name="description"
+    content="Programa de Integridade da F&F Engenharia. Diretrizes do Código de Ética e Conduta e Canal de Denúncia Anônimo.">
+  <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./css/stylecompliance.css" />
-  <link rel="stylesheet" href="./css/responsivecompliance.css">
-  <script src="https://kit.fontawesome.com/3449d8e4b5.js" crossorigin="anonymous"></script>
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/3449d8e4b5.js" crossorigin="anonymous" defer></script>
+
+  <!-- CSS Principal Unificado -->
+  <link rel="stylesheet" href="./css/style.css">
   <title>Programa de Integridade | F&F Engenharia</title>
+
+  <!-- Dados Estruturados FAQPage (SEO/GEO/AEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "O Canal de Denúncia da F&F Engenharia é anônimo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. O Canal de Denúncia da F&F Engenharia garante o sigilo absoluto e anonimato do denunciante, em conformidade com o Programa de Integridade e a legislação vigente."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Como entrar em contato com a F&F Engenharia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Você pode entrar em contato pelo telefone +55 (51) 3022-3818, pelo e-mail fefengenharia@ig.com.br, ou visitando nossa sede na Rua Félix da Cunha, 69, Bairro Vila Nova, Novo Hamburgo - RS."
+      }
+    }]
+  }
+  </script>
 </head>
 
-<body>
-  <header class="hFixa"><!--Header Fixa-->
-    <div class="hcentro">
-      <nav class="hNav">
-        <a class="logo-link" href="https://www.fefengenharia.com.br/"><img class="logo-img"
-            src="./imagens/logotipo_f_e_f-removebg-preview.png" alt="Logo F&F Engenharia"></a>
-        <nav class="navbar menu-desktop">
-          <a class="navlink" href="https://www.fefengenharia.com.br/#servicos">Serviços</a></li>
-          <a class="navlink" href="https://www.fefengenharia.com.br/#quem-somos">Quem Somos</a></li>
-          <a class="navlink" href="https://www.fefengenharia.com.br/compliance.html">Compliance</a></li>
-          <a class="navlink" href="https://www.fefengenharia.com.br/#contato">Contato</a></li>
-        </nav>
-        <div class="menu-mobile">
+<body class="compliance-body">
+  <!-- Header Fixo -->
+  <header class="hFixa">
+    <div class="centro">
+      <nav class="hNav" aria-label="Navegação Principal">
+        <a class="logo-link" href="index.html">
+          <img class="logo-img" src="./imagens/logotipo_f_e_f-removebg-preview.png" alt="Logo F&F Engenharia">
+        </a>
+
+        <div class="navbar menu-desktop">
+          <a class="navlink" href="index.html#servicos">Serviços</a>
+          <a class="navlink" href="index.html#quem-somos">Quem Somos</a>
+          <a class="navlink" href="compliance.html">Compliance</a>
+          <a class="navlink" href="index.html#contato">Contato</a>
+        </div>
+
+        <button class="menu-mobile-btn" aria-label="Menu" aria-expanded="false">
           <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="menu-mobile-nav" aria-label="Menu Mobile">
           <ul>
-            <a href="https://fefengenharia.com.br/#servicos"><li>Serviços</li></a>
-            <a href="https://fefengenharia.com.br/#quem-somos"><li>Quem somos</li></a>
-            <a href="https://fefengenharia.com.br/compliance.html"><li>Compliance</li></a>
-            <a href="https://fefengenharia.com.br/#contato"><li>Contato</li></a>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#quem-somos">Quem somos</a></li>
+            <li><a href="compliance.html">Compliance</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
           </ul>
         </div>
       </nav>
     </div>
-  </header><!--Header Fixa-->
-  <div class="block"></div>
-  <div class="centro">
+  </header>
+
+  <div class="block" style="height: 40px; background-color: transparent;"></div>
+
+  <main class="compliance-main-card">
     <section class="programa">
-      <header class="logo">
-        <div class="img-logo">
-          <img src="./imagens/logotipo_f_e_f-removebg-preview.png" alt="Logo F&F Engenharia">
-        </div>
+      <header class="logo-header">
+        <img src="./imagens/logotipo_f_e_f-removebg-preview.png" alt="Logo F&F Engenharia">
       </header>
       <h1 class="introducao">PROGRAMA DE INTEGRIDADE F&F ENGENHARIA</h1>
       <p>
@@ -58,84 +96,103 @@
         licitação e contratações com a Administração Pública.
       </p>
     </section>
+
     <section class="termo-empresarial">
-      <h1 class="introducao">TERMO DE COMPROMISSO EMPRESARIAL</h1>
+      <h2 class="introducao">TERMO DE COMPROMISSO EMPRESARIAL</h2>
       <p>
         A F&F Engenharia tem como objetivo construir uma relação de
-        confinaça com colaboradores, parceiros, clientes, entidades
+        confiança com colaboradores, parceiros, clientes, entidades
         governamentais e a comunidade, fundamentada em um compromisso
         corporativo sólido. Esse compromisso é formalizado por meio do
         Código de Ética e Conduta, que é desenvolvido e revisado conforme
         princípios que refletem a cultura de
         <b>integridade, sustentabilidade, transparência e boas práticas.</b>
       </p>
+
       <ul class="lista-topc">
         <li class="topico">
-          <h1>MISSÃO -</h1>
-          <p>
-            executar obras para o setor público, contribuindo para o
-            desenvolvimento econômico e social regional.
-          </p>
+          <h3>MISSÃO -</h3>
+          <span>executar obras para o setor público, contribuindo para o desenvolvimento econômico e social
+            regional.</span>
         </li>
         <li class="topico">
-          <h1>VISÃO -</h1>
-          <p>
-            ser uma empresa de referência no setor de obras públicas,
-            reconhecida pelo compromisso e solidez nas suas execuções e
-            entregas.
-          </p>
+          <h3>VISÃO -</h3>
+          <span>ser uma empresa de referência no setor de obras públicas, reconhecida pelo compromisso e solidez nas
+            suas execuções e entregas.</span>
         </li>
         <li class="topico">
-          <h1>VALORES -</h1>
-          <p>experiência, transparência e integridade.</p>
+          <h3>VALORES -</h3>
+          <span>experiência, transparência e integridade.</span>
           <ul>
             <li class="subtopico">
-              <p>
-                <b>Experiência:</b> expertise de mais de 20 anos de atuação
-                no setor público através de profissionais treinados,
-                respeitados e valorizados.
-              </p>
+              <p><b>Experiência:</b> expertise de mais de 20 anos de atuação no setor público através de profissionais
+                treinados, respeitados e valorizados.</p>
             </li>
             <li class="subtopico">
-              <p>
-                <b>Transparência:</b> compromisso em manter informações
-                claras sobre as atividades, realizações, políticas e
-                desempenho da empresa, de maneira sistemática e acessível.
-              </p>
+              <p><b>Transparência:</b> compromisso em manter informações claras sobre as atividades, realizações,
+                políticas e desempenho da empresa, de maneira sistemática e acessível.</p>
             </li>
             <li class="subtopico">
-              <p>
-                <b>Integridade:</b> atuar de forma responsável, respeitando
-                a legislação e mantendo conduta íntegra nas relações com
-                clientes, fornecedores, Administração Pública, comunidades
-                locais e sociedade em geral.
-              </p>
+              <p><b>Integridade:</b> atuar de forma responsável, respeitando a legislação e mantendo conduta íntegra nas
+                relações com clientes, fornecedores, Administração Pública, comunidades locais e sociedade em geral.</p>
             </li>
           </ul>
         </li>
       </ul>
+
       <div class="datas">
-        <h1>DATA DA CRIAÇÃO DO PROGRAMA DE INTEGRIDADE</h1>
+        <h3>DATA DA CRIAÇÃO DO PROGRAMA DE INTEGRIDADE</h3>
         <span>
-          <b>Criação:</b> junho, julho e agosto de 2024. <br />
-          <b>Implementações:</b> agosto de 2024. <br />
-          <b>Criação:</b> junho, julho e agosto de 2024.
+          <b>Criação:</b> junho, julho e agosto de 2024. <br>
+          <b>Implementações:</b> agosto de 2024.
         </span>
       </div>
+
       <div class="codigo">
-        <h1>CÓDIGO DE ÉTICA E CONDUTA</h1>
+        <h3>CÓDIGO DE ÉTICA E CONDUTA</h3>
         <p>
           O Código de Ética e Conduta da F&F Engenharia consiste em um
           conjunto de diretrizes que determina os valores e condutas da
           empresa, estabelecendo padrões de comprometimento com o mercado,
           fundamentados em princípios éticos, sociais e ambientais.
         </p>
-        <a class="pdf-link" href="./Código de Conduta F&F Engenharia e Construção Ltda.pdf" target="_blank"><i class="fa-solid fa-upload"></i>BAIXAR PDF</a>
+        <a class="pdf-link" href="./Código de Conduta F&F Engenharia e Construção Ltda.pdf" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fa-solid fa-file-pdf"></i> BAIXAR PDF
+        </a>
       </div>
     </section>
-    <section class="canal-de-denuncia">
+    <section class="politicas-de-integridade">
+      <h2 class="introducao">POLÍTICAS DE INTEGRIDADE</h2>
+      <ul class="lista-politicas">
+        <li class="politica">
+          <h3>POLÍTICA ANTICORRUPÇÃO</h3>
+          <a class="pdf-link" href="./pdfs/F&F ENGENHARIA - PROGRAMA DE INTEGRIDADE - Política Anticorrupção+.pdf"
+            target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> BAIXAR PDF</a>
+        </li>
+        <li class="politica">
+          <h3>POLÍTICA DE BRINDES, HOSPITALIDADES E ENTRETENIMENTO</h3>
+          <a class="pdf-link"
+            href="./pdfs/F&F ENGENHARIA - PROGRAMA DE INTEGRIDADE - Política de Brindes, Hospitalidades e Entretenimento+.pdf"
+            target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> BAIXAR PDF</a>
+        </li>
+        <li class="politica">
+          <h3>POLÍTICA DE DUE DILIGENCE</h3>
+          <a class="pdf-link" href="./pdfs/F&F ENGENHARIA - PROGRAMA DE INTEGRIDADE - Política de Due Diligence+.pdf"
+            target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> BAIXAR PDF</a>
+        </li>
+        <li class="politica">
+          <h3>POLÍTICA DE RELACIONAMENTO COM O PODER PÚBLICO</h3>
+          <a class="pdf-link"
+            href="./pdfs/07. F&F ENGENHARIA- PROGRAMA DE INTEGRIDADE - Política de Relacionamento com o Poder Público (1) V2.pdf"
+            target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> BAIXAR PDF</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="canal-de-denuncia" id="canal-denuncia">
       <div class="informacoes">
-        <h1 class="introducao">CANAL DE DENÚNCIA</h1>
+        <h2 class="introducao">CANAL DE DENÚNCIA</h2>
         <p>
           Caso tenha conhecimento de infração contra a lei ou as regras do
           código de ética e conduta, especialmente em casos de fraudes,
@@ -143,46 +200,35 @@
           delitos criminosos ou civis, ou de um risco para a reputação da
           F&F Engenharia, acesse o nosso canal de denúncias.
         </p>
-        <span>Toda a denúncia, questionamento ou comunicação será assegurado o
-          sigilo absoluto e o tratamento adequados de cada situação
-          comunicada.</span>
-        <span class="telefone">Se preferir, entre em contato pelo nosso endereço
-          telefônico: +55 51 3022-3818</span>
+        <p style="margin-top: 0.5rem;"><b>Toda a denúncia, solicitação de suporte, questionamento ou comunicação será
+            mantida em estrito sigilo, não havendo qualquer possibilidade de retaliação ao denunciante.</b></p>
+        <span class="telefone">Se preferir, entre em contato pelo nosso endereço telefônico: +55 (51) 3022-3818</span>
       </div>
+
       <form action="https://formsubmit.co/fefengenharia@ig.com.br" method="POST">
-        <label for="nome">Nome(Opcional):</label>
-        <input class="form-input" type="text" id="nome" name="Nome" />
+        <label for="nome">Nome (Opcional):</label>
+        <input class="form-input" type="text" id="nome" name="Nome">
 
-        <label for="email">E-mail(Opcional):</label>
-        <input class="form-input" type="email" id="email" name="Email" />
+        <label for="email">E-mail (Opcional):</label>
+        <input class="form-input" type="email" id="email" name="Email">
 
-        <label for="telefone">Telefone(Opcional):</label>
-        <input class="form-input" type="tel" name="Telefone" id="telefone">
+        <label for="telefone">Telefone (Opcional):</label>
+        <input class="form-input" type="tel" id="telefone" name="Telefone">
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea class="form-input" name="Mensagem" id="mensagem" required></textarea>
+        <label for="mensagem">Mensagem:*</label>
+        <textarea class="form-input" id="mensagem" name="Mensagem" required style="min-height: 120px;"></textarea>
+
         <input type="hidden" name="_template" value="box">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="obrigadocompliance.html">
 
-        <input class="form-input btn btn-form" type="submit" value="Enviar" />
+        <input class="form-input btn-form" type="submit" value="Enviar">
       </form>
     </section>
-  </div>
-  <script>
-    // Seleciona o ícone e o menu UL
-    const menuIcon = document.querySelector('.menu-mobile i');
-    const menu = document.querySelector('.menu-mobile ul');
+  </main>
 
-    // Adiciona o evento de clique ao ícone
-    menuIcon.addEventListener('click', () => {
-        // Alterna a visibilidade do menu
-        if (menu.style.display === 'none' || menu.style.display === '') {
-            menu.style.display = 'block';  // Mostra o menu
-        } else {
-            menu.style.display = 'none';   // Esconde o menu
-        }
-    });
-</script>
+  <!-- JavaScript Principal -->
+  <script src="./js/main.js" defer></script>
 </body>
 
 </html>

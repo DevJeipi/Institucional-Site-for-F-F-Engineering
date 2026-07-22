@@ -3,188 +3,229 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="João Pedro Hubner Ghilardi">
     <meta name="keywords" content="engenharia, construção, obras públicas">
-    <meta name="description" content="A F&F Engenharia é uma empresa que atua no setor público, que cumpre com seus compromissos, buscando
-                    sua excelência desde 2008.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./imagens/favicon.ico" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    <meta name="description" content="A F&F Engenharia é uma empresa que atua no setor público, que cumpre com seus compromissos, buscando sua excelência desde 2008.">
+    
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3449d8e4b5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/3449d8e4b5.js" crossorigin="anonymous" defer></script>
+    
+    <!-- CSS Principal Unificado -->
+    <link rel="stylesheet" href="./css/style.css">
     <title>F&F Engenharia | Referência nos empreendimentos</title>
+
+    <!-- Dados Estruturados LocalBusiness (SEO/GEO/AEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GovernmentBuilding",
+      "name": "F&F Engenharia e Construção Ltda.",
+      "image": "https://www.fefengenharia.com.br/imagens/foto11FeF.jpeg",
+      "@id": "https://www.fefengenharia.com.br/#organization",
+      "url": "https://www.fefengenharia.com.br/",
+      "telephone": "+55-51-3022-3818",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Félix da Cunha, 69, Bairro Vila Nova",
+        "addressLocality": "Novo Hamburgo",
+        "addressRegion": "RS",
+        "postalCode": "93520-290",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -29.680655,
+        "longitude": -51.135242
+      },
+      "taxID": "10.533.390/0001-19"
+    }
+    </script>
 </head>
 
 <body>
-    <header class="hFixa"><!--Header Fixa-->
+    <!-- Header Fixo -->
+    <header class="hFixa">
         <div class="centro">
-            <nav class="hNav">
-                <a class="logo-link" href="https://www.fefengenharia.com.br/"><img class="logo-img"
-                        src="./imagens/logotipo_f_e_f-removebg-preview.png" alt="Logo F&F Engenharia"></a>
-                <nav class="navbar menu-desktop">
-                    <a class="navlink" href="https://www.fefengenharia.com.br/#servicos">Serviços</a></li>
-                    <a class="navlink" href="https://www.fefengenharia.com.br/#quem-somos">Quem Somos</a></li>
-                    <a class="navlink" href="https://www.fefengenharia.com.br/compliance.html">Compliance</a></li>
-                    <a class="navlink" href="https://www.fefengenharia.com.br/#contato">Contato</a></li>
-                </nav>
-                <div class="menu-mobile">
+            <nav class="hNav" aria-label="Navegação Principal">
+                <a class="logo-link" href="index.html">
+                    <img class="logo-img" src="./imagens/logotipo_f_e_f-removebg-preview.png" alt="Logo F&F Engenharia">
+                </a>
+                
+                <div class="navbar menu-desktop">
+                    <a class="navlink" href="#servicos">Serviços</a>
+                    <a class="navlink" href="#quem-somos">Quem Somos</a>
+                    <a class="navlink" href="compliance.html">Compliance</a>
+                    <a class="navlink" href="#contato">Contato</a>
+                </div>
+
+                <button class="menu-mobile-btn" aria-label="Menu" aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="menu-mobile-nav" aria-label="Menu Mobile">
                     <ul>
-                        <a href="https://fefengenharia.com.br/#servicos"><li>Serviços</li></a>
-                        <a href="https://fefengenharia.com.br/#quem-somos"><li>Quem somos</li></a>
-                        <a href="https://fefengenharia.com.br/compliance.html"><li>Compliance</li></a>
-                        <a href="https://fefengenharia.com.br/#contato"><li>Contato</li></a>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#quem-somos">Quem somos</a></li>
+                        <li><a href="compliance.html">Compliance</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
-    </header><!--Header Fixa-->
-    <section class="home"><!--Seção 1 Home-->
-        <img src="./imagens/foto11FeF.jpeg" alt="Foto De Obra Em Desenvolvimento">
-        <div class="centro">
-            <div class="container-headline">
-                <h1>Qualidade diferenciada <br> com segurança e <br> responsabilidade.</h1>
-                <h2>Parceiros de confiança na execução <br> de obras públicas de grande impacto, <br> garantindo prazo e
-                    excelência.</h2>
-            </div>
-        </div>
-    </section><!--Seção 1 Home-->
-    <section class="quem-somos" id="quem-somos"><!--Seção 2 Quem Somos-->
-        <div class="centro">
-            <div class="container-text">
-                <h1 class="minitext">QUEM</h1>
-                <h2 class="bigtext">SOMOS</h2>
-                <div class="block"></div>
-            </div>
-            <div class="container-descricao">
-                <img src="./imagens/foto4FeF.jpeg" alt="Foto De Obra Em Desenvolvimento">
-                <p>A F&F Engenharia é uma empresa que atua no setor público, que cumpre com seus compromissos, buscando
-                    sua excelência desde 2008.</p>
-            </div>
-        </div>
-    </section><!--Seção 2 Quem Somos-->
-    <section class="servicos"><!--Seção 3 Organograma-->
-        <div class="centro">
-            <h1 class="introducao">Nossa Estrutura Organizacional</h1>
-            <div class="container-estrutura">
-                <img src="./imagens/novoorganogramaFeF.png" alt="Estrutura Organizacional FeF Engenharia">
-            </div>
-            <div class="container-institucional">
-                <div class="atividades">
-                    <h1 class="introducao">Descrição das atividades</h1>
-                    <div class="block"></div>
-                    <ul>
-                        <li class="descricao-atv">
-                            <h1>DIRETOR</h1>
-                            <p> dirige, planeja, organiza e controla as atividades de diversas áreas da empresa,
-                                direcionando políticas de gestão dos recursos financeiros, administrativos e técnicos.
-                                Responsável pela supervisão e aplicação das diretrizes convencionadas pelo Programa de
-                                Integridade F&F Engenharia e Construções (Compliance Officer).</p>
-                        </li>
-                        <li class="descricao-atv">
-                            <h1>GESTOR ADMINISTRATIVO</h1>
-                            <p> coordena as atividades diárias do departamento administrativo, garantindo o
-                                funcionamento adequado dos processos de gestão garantindo eficiência e alinhamento com
-                                os objetivos estratégicos da empresa. Desenvolve o processo de recrutamento, seleção e
-                                treinamento de pessoal. Desenvolve políticas de RH.</p>
-                        </li>
-                        <li class="descricao-atv">
-                            <h1>GESTOR TÉCNICO</h1>
-                            <p> desenvolve o planejamento estratégicos para a busca de aperfeiçoamento técnico
-                                operacional. Implementa sistemas de tecnologias que buscam a automação dos processos
-                                operacionais. Desenvolve projetos de engenharia, planeja e executa obras de engenharia.
-                            </p>
-                        </li>
-                        <li class="descricao-atv">
-                            <h1>GESTOR FINANCEIRO</h1>
-                            <p> coordena o controle de fluxo de caixa, orçamentos, contas a pagar e receber, coordena as
-                                atividades contábeis e fiscais, garantindo a conformidade com a legislação pertinente.
-                                Identifica as necessidades de compras juntamente com o Departamento Técnico, gerencia
-                                pesquisas de mercado para identificar fornecedores confiáveis, gerencia a formalização e
-                                registro de pedidos garantindo a rastreabilidade e controle</p>
-                        </li>
-                    </ul>
+    </header>
+
+    <main>
+        <!-- Seção 1 Home -->
+        <section class="home" id="home">
+            <img class="home-bg-img" src="./imagens/foto11FeF.jpeg" alt="Foto De Obra Em Desenvolvimento" fetchpriority="high">
+            <div class="home-overlay"></div>
+            <div class="centro">
+                <div class="container-headline">
+                    <h1>Qualidade diferenciada <br> com segurança e <br> responsabilidade.</h1>
+                    <h2>Parceiros de confiança na execução <br> de obras públicas de grande impacto, <br> garantindo prazo e excelência.</h2>
                 </div>
             </div>
-        </div>
-    </section><!--Seção 3 Organograma-->
-    <section class="imagens-servico" id="servicos"><!--Seção 4 Imagens do Serviço-->
-        <div class="centro">
-            <div class="container-text">
-                <h1 class="minitext">NOSSOS</h1>
-                <h2 class="bigtext">SERVIÇOS</h2>
-                <div class="block"></div>
+        </section>
+
+        <!-- Seção 2 Quem Somos -->
+        <section class="quem-somos" id="quem-somos">
+            <div class="centro">
+                <div class="container-text">
+                    <span class="minitext">QUEM</span>
+                    <h2 class="bigtext">SOMOS</h2>
+                    <div class="block"></div>
+                </div>
+                <div class="container-descricao">
+                    <img src="./imagens/foto4FeF.jpeg" alt="Foto De Obra Em Desenvolvimento" loading="lazy" decoding="async">
+                    <p>A F&F Engenharia é uma empresa que atua no setor público, que cumpre com seus compromissos, buscando sua excelência desde 2008.</p>
+                </div>
             </div>
-            <div class="wrapper">
-                <div class="item item1"></div>
-                <div class="item item2"></div>
-                <div class="item item3"></div>
-                <div class="item item4"></div>
-                <div class="item item5"></div>
-                <div class="item item6"></div>
-                <div class="item item7"></div>
-                <div class="item item8"></div>
-                <div class="item item9"></div>
-                <div class="item item10"></div>
-                <div class="item item11"></div>
+        </section>
+
+        <!-- Seção 3 Organograma e Estrutura -->
+        <section class="servicos">
+            <div class="centro">
+                <h2 class="introducao">Nossa Estrutura Organizacional</h2>
+                <div class="container-estrutura">
+                    <img src="./imagens/organograma.avif" alt="Estrutura Organizacional FeF Engenharia" loading="lazy" decoding="async">
+                </div>
+                <div class="container-institucional">
+                    <div class="atividades">
+                        <h2 class="introducao">Estrutura da empresa</h2>
+                        <div class="block"></div>
+                        <ul>
+                            <li class="descricao-atv">
+                                <h3>DEPARTAMENTO ADMINISTRATIVO/FINANCEIRO</h3>
+                                <p>Dirigido pelo Gestor do Departamento Administrativo/Financeiro, compreende o Setor Administrativo (rotinas administrativas, pessoal e contratos) e o Setor Financeiro (contas a pagar e receber, orçamento, compras e conciliações), em posição de paridade entre si.</p>
+                            </li>
+                            <li class="descricao-atv">
+                                <h3>DEPARTAMENTO TÉCNICO</h3>
+                                <p>Dirigido pelo Gestor do Departamento Técnico, compreende o Setor de Engenharia (planejamento, orçamentação e responsabilidade técnica das obras) e, subordinado a este, o Mestre de Obras, função de comando das equipes de campo, às quais se reportam os demais profissionais operacionais.</p>
+                            </li>
+                        </ul>
+                        <div class="instancia-interna">
+                            <h3>INSTÂNCIA INTERNA DE INTEGRIDADE</h3>
+                            <p>Integra a estrutura de governança, em posição de assessoramento com reporte direto e independente à Diretoria Executiva, a Instância Interna de Integridade, composta pelo Compliance Officer e pelo Comitê de Ética e Conduta, na forma do Regimento Interno.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section><!--Seção 4 Imagens do Serviço-->
-    <section class="contato" id="contato">
-        <div class="centro">
-            <div class="form-ctt">
-                <h1 class="introducao">CONTATO</h1>
-                <p>Aqui encontra-se o setor de suporte. Caso você quiser fazer comentários, dúvidas, sugestões ou caso
-                    precisar de informações basta preencher o formulário abaixo! O mais rápido possível nossa equipe
-                    entrará em contato com você. Aguardamos seu contato! </p>
-                <form action="https://formsubmit.co/fefengenharia@ig.com.br" method="POST">
-                    <label class="form-lb">Seu Nome:*<input class="area" name="nome" type="text" required></label>
-                    <label class="form-lb">Seu email:*<input class="area" name="email" type="email" required></label>
-                    <label class="form-lb">Assunto:*<input class="area" name="assunto" type="text" required></label>
-                    <label class="form-lb">Mensagem:* <textarea class="area" name="mensagem" id="mensagem"
-                            required></textarea></label>
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://fefengenharia.com.br/obrigadoctt.html">
-                    <label><input class="btn-enviar" type="submit"></label>
-                </form>
+        </section>
+
+        <!-- Seção 4 Carrossel de Fotos de Serviços -->
+        <section class="imagens-servico" id="servicos">
+            <div class="centro">
+                <div class="container-text">
+                    <span class="minitext">NOSSOS</span>
+                    <h2 class="bigtext">SERVIÇOS</h2>
+                    <div class="block"></div>
+                </div>
+                
+                <div class="wrapper">
+                    <div class="carousel-track">
+                        <!-- Primeira Sequência -->
+                        <div class="carousel-card"><img src="./imagens/foto1FeF.jpeg" alt="Obra 1" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto2FeF.jpeg" alt="Obra 2" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto3FeF.jpeg" alt="Obra 3" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto13FeF.jpeg" alt="Obra 13" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto12FeF.jpeg" alt="Obra 12" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto6FeF.jpeg" alt="Obra 6" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto7FeF.jpeg" alt="Obra 7" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto8FeF.jpeg" alt="Obra 8" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto9FeF.jpeg" alt="Obra 9" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto10FeF.jpeg" alt="Obra 10" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto11FeF.jpeg" alt="Obra 11" loading="lazy"></div>
+
+                        <!-- Duplicação para efeito contínuo infinito -->
+                        <div class="carousel-card"><img src="./imagens/foto1FeF.jpeg" alt="Obra 1" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto2FeF.jpeg" alt="Obra 2" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto3FeF.jpeg" alt="Obra 3" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto13FeF.jpeg" alt="Obra 13" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto12FeF.jpeg" alt="Obra 12" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto6FeF.jpeg" alt="Obra 6" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto7FeF.jpeg" alt="Obra 7" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto8FeF.jpeg" alt="Obra 8" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto9FeF.jpeg" alt="Obra 9" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto10FeF.jpeg" alt="Obra 10" loading="lazy"></div>
+                        <div class="carousel-card"><img src="./imagens/foto11FeF.jpeg" alt="Obra 11" loading="lazy"></div>
+                    </div>
+                </div>
             </div>
-            <div class="outros-ctt">
-                <span>Ou entre em contato pelo telefone:</span>
-                <h1 class="telefone">+55 (51) 3022-3818</h1>
-                <br>
-                <br>
-                <h3>Endereço</h3>
-                <span style="text-align: center;">Rua Félix da Cunha, 69, Bairro Vila Nova, <br> Novo Hamburgo, Rio
-                    Grande do Sul.<br> CEP 93520-290</span>
-                <br>
-                <span>CPNJ 10.533.390/0001-19</span>
+        </section>
+
+        <!-- Seção 5 Contato -->
+        <section class="contato" id="contato">
+            <div class="centro">
+                <div class="form-ctt">
+                    <h2 class="introducao">CONTATO</h2>
+                    <p>Aqui encontra-se o setor de suporte. Caso você quiser fazer comentários, dúvidas, sugestões ou caso precisar de informações basta preencher o formulário abaixo! O mais rápido possível nossa equipe entrará em contato com você. Aguardamos seu contato!</p>
+                    <form action="https://formsubmit.co/fefengenharia@ig.com.br" method="POST">
+                        <label class="form-lb" for="nome">Seu Nome:*
+                            <input class="area" id="nome" name="nome" type="text" required>
+                        </label>
+                        <label class="form-lb" for="email">Seu email:*
+                            <input class="area" id="email" name="email" type="email" required>
+                        </label>
+                        <label class="form-lb" for="assunto">Assunto:*
+                            <input class="area" id="assunto" name="assunto" type="text" required>
+                        </label>
+                        <label class="form-lb" for="mensagem">Mensagem:* 
+                            <textarea class="area" id="mensagem" name="mensagem" required></textarea>
+                        </label>
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="obrigadoctt.html">
+                        <button class="btn-enviar" type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="outros-ctt">
+                    <span>Ou entre em contato pelo telefone:</span>
+                    <h3 class="telefone">+55 (51) 3022-3818</h3>
+                    <br>
+                    <h3>Endereço</h3>
+                    <span>Rua Félix da Cunha, 69, Bairro Vila Nova, <br> Novo Hamburgo, Rio Grande do Sul.<br> CEP 93520-290</span>
+                    <br>
+                    <span>CNPJ 10.533.390/0001-19</span>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+
     <footer class="rodape">
         © Copyright 2024 - Todos os direitos reservados
     </footer>
-    <script>
-        // Seleciona o ícone e o menu UL
-        const menuIcon = document.querySelector('.menu-mobile i');
-        const menu = document.querySelector('.menu-mobile ul');
 
-        // Adiciona o evento de clique ao ícone
-        menuIcon.addEventListener('click', () => {
-            // Alterna a visibilidade do menu
-            if (menu.style.display === 'none' || menu.style.display === '') {
-                menu.style.display = 'block';  // Mostra o menu
-            } else {
-                menu.style.display = 'none';   // Esconde o menu
-            }
-        });
-    </script>
+    <!-- JavaScript Principal -->
+    <script src="./js/main.js" defer></script>
 </body>
 
 </html>
