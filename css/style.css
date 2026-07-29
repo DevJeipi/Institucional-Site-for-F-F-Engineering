@@ -686,13 +686,16 @@ textarea.area {
 }
 
 .lista-politicas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .politica {
+    flex: 1 1 300px;
+    max-width: 340px;
     background-color: rgba(0, 0, 0, 0.03);
     border: 1px solid rgba(63, 63, 63, 0.15);
     padding: 1.5rem;
